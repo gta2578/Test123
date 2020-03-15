@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Урок 2</title>
+	</head>
+	<body>
+            <style>
+                    body   {background-color: #D8D8D8;}
+                    header {width: 100%;
+                            background-color: #CEF6F5;
+                        }  
+                    #clearfix {clear: both;}
+                    img     {width: 200px;
+                            height: 100px;} 
+                     
+                    nav {background-color: black;}
+                    
+                    #top-menu ul {display: flex;
+                                padding: 0px;}
+                    #top-menu li {list-style-type: none;
+                                color: white;
+                                font-size: 18px;
+                                line-height: 50px;}
+                    #top-menu a{padding: 0px 20px;
+                                display: flex;}               
+                    #top-menu a:link, #top-menu a:visited {
+                                color: white;
+                                text-decoration: none;
+                                line-height: 50px;}
+                    #top-menu a:hover, #top-menu a:active 
+                                {color: white;
+                                background-color: #848484;}
+                    address ul {
+                            display: flex;
+                            padding: 0px;
+                            }
+                    address li {padding: 0px 50px;
+                                list-style-type: none;
+                                font-size: 16px;
+                            }
+                    address a{padding: 0px 0px;
+                                display: flex;}                    
+                    main{float: left;
+                        width: 70%;
+                        background-color: #F6CEF5;
+                        }
+                    aside {float: right;
+                            width: 29.8%;
+                        }
+                    footer {width: 100%;
+                            background-color: yellow;
+                    }
+                       
+                    header, main, aside, footer {
+                        box-sizing: border-box;
+                        padding: 10px;
+                    }
+                    td {min-width: 50px;
+                        min-height: 50px;
+                    }        
+                   </style>
+        <header>
+                <a href="http://htmlbook.ru/"><img src="../Image/pchela1.jpg"></a>
+                <nav>
+                    <div id="top-menu">
+                        <ul>
+                            <li><a href="" class="active">Главная</a></li>
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Продукция</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Вакансии</a></li>
+                        </ul> 
+                    </div>
+                </nav>
+
+        </header>
+        <aside>
+            <section>
+                    <h3>Это  первый заголовок для сайдбара</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Nulla pharetra risus erat, eu imperdiet felis suscipit at.</p>
+                    <p>Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. 
+                    Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. 
+                    Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, 
+                    facilisis lorem sit amet, porta ante.</p>  
+            </section>
+            <section>
+                    <h3>Это  второй заголовок для сайдбара</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Nulla pharetra risus erat, eu imperdiet felis suscipit at.</p>    
+            </section>
+            <section>
+                <form action="" method="GET" name="form1"><br>
+                    <fieldset>
+                        <legend><b>Заголовок для HTML формы</b></legend>
+                        Ваше имя <br><input type="text" placeholder="Введите имя" name="fname"><br><br>
+                        Ваша фамилия <br><input type="text" placeholder="Введите фамилию" name="lname"><br><br>
+                        Ваш email <br><input type="email" placeholder="Введите email" name="E-mail"><br><br>
+                        Ваша дата рождения <br><input type="date" placeholder="Дд-мм-гггг" name="bdate"><br><br>
+                        Ваш телефон <br><input type="tel" placeholder="введите телефон" name="tel"><br><br>
+                        Выберите размер <br><input type="radio" id="elem1" name="radio1" value="XS">
+                        <label for="elem1">XS</label><br>
+                        <input type="radio" id="elem2" name="radio1" value="S">
+                        <label for="elem2">S</label><br>
+                        <input type="radio" id="elem3" name="radio1" value="M">
+                        <label for="elem3">M</label><br>
+                        <input type="radio" id="elem4" name="radio1" value="L">
+                        <label for="elem4">L</label><br><br>
+                        Дополнительные опции <br><input type="radio" id="elem5" name="radio2" value="1">
+                        <label for="elem5">Доставка</label><br>
+                        <input type="radio" id="elem6" name="radio2" value="2">
+                        <label for="elem6">Оплата картой</label><br>
+                        <input type="radio" id="elem7" name="radio2" value="3">
+                        <label for="elem7">Перезвоните мне</label><br><br>
+                        <select>
+                            <option>Красный</option>
+                            <option>Синий</option>
+                            <option>Желтый</option>
+                            <option>Белый</option>
+                            <option>Зеленый</option>
+                            <option selected>Черный</option>
+                            <option>Коричневый</option>
+                        </select><br><br>
+                        <button type="submit">Отправить</button>
+                    </fieldset>
+                </form>
+            </section>
+            
+        </aside>
+        <main>
+            <section>
+                <article>
+                <div>
+                    <h2>Это заголовок первой секции</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			        <p>Nulla pharetra risus erat, eu imperdiet felis suscipit at.</p>
+			        <p>Vivamus rhoncus vel neque non eleifend. Donec adipiscing eros quis molestie sodales. 
+                    Proin vitae nulla ut sem lobortis scelerisque. Aliquam ultricies porta sem quis fringilla. 
+                    Quisque pretium enim ut elit fringilla, in adipiscing ligula placerat. Integer id tortor tristique, 
+                    facilisis lorem sit amet, porta ante.</p>
+                    <p> Nulla eget diam in erat hendrerit gravida. Cras ut nunc metus. Nullam id faucibus ante.</p>
+                </div>
+                </article>
+                <div>
+                    <h3>Это заголовок первой секции</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Nulla pharetra risus erat, eu imperdiet felis suscipit at.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Это заголовок второй секции</h2>
+                <table border cellspacing="0">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">12</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td rowspan="2">3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr> 
+                </table>
+                <br><br>
+                <table border cellspacing="0">
+                    <tr>
+                        <td> </td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="4">текст</td>
+                        <td rowspan="4">текст</td>
+                        <td rowspan="4">текст</td>
+                        <td>текст</td>
+                        <td>текст</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>текст</td>
+                        <td>текст</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>текст</td>
+                        <td rowspan="2">текст</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>текст</td>
+                    </tr>
+                </table>    
+                <br>
+                <br>
+            </section>
+            <iframe src="https://ru.wikipedia.org/" width="500" height="500"></iframe>
+        </main>
+        <div id="clearfix"></div>
+        <footer>
+            <address>
+                    <ul>
+                        <li><h4>Адрес:</h4>
+                         <p> Nulla eget diam in erat hendrerit gravida.</p>
+                         <p>Cras ut nunc metus.</p>
+                         <p>Nullam id faucibus ante.</p>   
+                        </li>
+                        <li><h4>Электронная почта:</h4>
+                            <a href="https://mail.google.com">E-mail</a>
+                        </li>
+                        <li><h4>Контактные данные:</h4>
+                            <a href="+380661231234">тел.: +380661231234</a>
+                            <a href="+380971231234">тел.: +380971231234</a>
+                            <a href="+380631231234">тел.: +380631231234</a>
+                        </li>
+                        <li><a href="http://htmlbook.ru/"><img src="../Image/pchela2.jpg"></a>
+                        </li>
+                    </ul>      
+            </address>
+        </footer>
+	</body>
+</html>
