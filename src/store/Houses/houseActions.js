@@ -5,8 +5,10 @@ export const setHouses = data => ({
     payload: data
 });
 
-export const getHouses = () => dispatch =>
-    fetch('https://api.jqestate.ru/v1/properties/country?pagination[limit]=70&pagination[offset]=13')
-    .then(res => res.json()).then((data) => dispatch(setHouses(data)))
+export const getHouses = () => dispatch => {
+    fetch('https://api.jqestate.ru/v1/properties/country?pagination[limit]=70&pagination[offset]=160')
+    .then(res => res.json())
+    .then((data) => dispatch(setHouses(data)))
+}
     
     
